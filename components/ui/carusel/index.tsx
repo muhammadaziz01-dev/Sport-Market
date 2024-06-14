@@ -1,6 +1,3 @@
-
-
-
 "use client"
 
 // import Swiper core and required modules
@@ -39,20 +36,21 @@ import {
       
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-          spaceBetween={0}
+          spaceBetween={1}
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
           autoplay={{ delay: 3000, disableOnInteraction: false }} 
+          className="min-w-[820x]"
         >
           {imgList.map((item, index) => {
             return (
-              <SwiperSlide key={index}>
-                <div className="h-[488px] w-[819px] rounded-[20px] bg-white overflow-hidden ">
-                  <div className="flex items-start">
+              <SwiperSlide key={index} className="w-[820x]  rounded-[20px]">
+                <div className="h-[488px] w-full rounded-[20px] overflow-hidden ">
+                  <div className="flex items-start justify-between">
                     <div className=" pt-[82px] pl-[70px]">
-                        <h1 className="text-[32px] font-extrabold">
+                        <h1 className="text-[28px] font-extrabold">
                             Бутсы Nike Phantom <br /> 
                             GT2 Elite FG
                         </h1>
