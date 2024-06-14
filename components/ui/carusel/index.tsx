@@ -38,16 +38,13 @@ import {
     return (
       
         <Swiper
-          // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
           spaceBetween={0}
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
-          autoplay={{ delay: 3000, disableOnInteraction: false }} // 3 soniyada slayd almashadi
-          // onSwiper={(swiper) => console.log(swiper)}
-          // onSlideChange={() => console.log("slide change")}
+          autoplay={{ delay: 3000, disableOnInteraction: false }} 
         >
           {imgList.map((item, index) => {
             return (
