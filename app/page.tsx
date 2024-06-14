@@ -1,6 +1,6 @@
 
 
-import { Carusel , CaruselCatalog} from "@/components/ui";
+import { Carusel , CaruselCatalog ,  CaruselProduct} from "@/components/ui";
 import { Card1 } from "@/components/ui/card";
 
 export default function Home() {
@@ -25,6 +25,34 @@ export default function Home() {
             <h1 className="text-[32px] mb-[31px]">Катаолог</h1>
             <div>
               <CaruselCatalog />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#F2F2F2] ">
+        <div className="container mx-auto px-2 5">
+          <div className="pt-[76px]">
+            <h1 className="text-[32px] mb-[31px]">Акция</h1>
+            <div>
+              <CaruselProduct text="Акция" bg="#FF1C1C"/>
+            </div>
+          </div>
+          <div className="pt-[76px]">
+            <h1 className="text-[32px] mb-[31px]">Новинки</h1>
+            <div>
+              <CaruselProduct text="Новый" bg="#917BFF"/>
+            </div>
+          </div>
+          <div className="pt-[76px]">
+            <h1 className="text-[32px] mb-[31px]">Продукты</h1>
+            <div>
+              <CaruselProduct />
+            </div>
+          </div>
+          <div className="pt-[76px]">
+            <h1 className="text-[32px] mb-[31px]">ТОП продажа</h1>
+            <div>
+              <CaruselProduct text="ТОП" bg="#10DE24" />
             </div>
           </div>
         </div>

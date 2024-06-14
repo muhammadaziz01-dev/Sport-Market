@@ -1,0 +1,48 @@
+/* styles/globals.css or components/Carousel.module.css */
+.carousel-container {
+    position: relative;
+  }
+  
+  .mySwiper {
+    padding-top: 40px; /* Adjust based on your design */
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #000; /* Adjust the color as needed */
+    top: 0; /* Align buttons to the top */
+  }
+  
+  .swiper-button-prev {
+    left: 10px;
+  }
+  
+  .swiper-button-next {
+    right: 10px;
+  }
+  
+  .slide-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .slide-content img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .slide-content .price {
+    color: red;
+  }
+  
+  .slide-content .old-price {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+
+  .test-Carusel{
+    margin-top: 50px;
+    background: red;
+  }
