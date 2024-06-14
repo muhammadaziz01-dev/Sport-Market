@@ -27,7 +27,7 @@ import {
   import ImageCarusel from "../../../assets/images/img-carusel1.png"
  
   
-  export default () => {
+  const  Carusel =  () => {
     const imgList = [
         ImageCarusel,
         ImageCarusel,
@@ -75,3 +75,6 @@ import {
         </Swiper>
     );
   };
+
+  Carusel.displayName = 'Carusel';
+  export default Carusel;
