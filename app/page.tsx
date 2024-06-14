@@ -29,7 +29,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-[#F2F2F2] ">
+      <section className="bg-[#F2F2F2] pb-[80px] ">
         <div className="container mx-auto px-2 5">
           <div className="pt-[76px]">
             <h1 className="text-[32px] mb-[31px]">Акция</h1>
