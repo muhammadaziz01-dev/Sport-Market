@@ -2,6 +2,7 @@
 
 import { Carusel , CaruselCatalog ,  CaruselProduct} from "@/components/ui";
 import { Card1 } from "@/components/ui/card";
+import {SectionHome} from "@/components/sections"
 
 export default function Home() {
   return (
@@ -57,6 +58,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <SectionHome/>
     </main>
   );
 }
