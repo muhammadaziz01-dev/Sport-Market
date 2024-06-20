@@ -1,10 +1,16 @@
+"use client";
 import Image from "next/image";
 
 import logo from "../../assets/icons/logo.svg";
 import { title } from "process";
 import Link from "next/link";
+import { useRouter } from "next/navigation"; 
+import { usePathname } from "next/navigation";
 
 function Header() {
+  const router = useRouter();
+  const pathname = usePathname();
+  
   const data = [
     { title: "Продукты", path: "/products" },
     { title: "Контакты", path: "/contacts" },
@@ -12,6 +18,11 @@ function Header() {
     { title: "Новости", path: "/news" },
     { title: "О нас", path: "/about" },
   ];
+
+  const handelClick= () => {
+      router.push("/cart");
+  };
+
   return (
     <>
       <nav>
@@ -61,13 +72,13 @@ function Header() {
               </div>
             </div>
             <div className="flex items-center gap-[15px]">
-                <button className=" rounded-[5px] bg-[#F2F2F2] text-black p-[15px] ">
+                <button className=" rounded-[5px] bg-[#F2F2F2] text-black p-[15px] hover:bg-[#FBD029] active:bg-[#F2F2F2] duration-300  ">
                     <i className="bi bi-person"></i>
                 </button>
-                <button className=" rounded-[5px] bg-[#F2F2F2] text-black p-[15px] ">
+                <button className=" rounded-[5px] bg-[#F2F2F2] text-black p-[15px] hover:bg-[#FBD029] active:bg-[#F2F2F2] duration-300 ">
                     <i className="bi bi-heart"></i>
                 </button>
-                <button className="flex items-center gap-[10px] px-[30px] py-[14px] rounded-[5px] bg-[#F2F2F2] text-black">
+                <button onClick={handelClick}  className={pathname == "/cart" ? "flex items-center gap-[10px] px-[30px] py-[14px] rounded-[5px] bg-[#FBD029] text-black " : "flex items-center gap-[10px] px-[30px] py-[14px] rounded-[5px] bg-[#F2F2F2] text-black hover:bg-[#FBD029] active:bg-[#F2F2F2] duration-300"}>
                   <i className="bi bi-cart3 "></i>
                   Корзина
                 </button>
